@@ -1,0 +1,14 @@
+.row{
+    height: 3.2em;
+}
+
+.logga{
+    text-align: left;
+    width: 10px;
+    display: inline;
+}
+
+.form {
+    text-align: right;
+    display: inline;
+}
