@@ -18,17 +18,16 @@
 <body>
     <header>
         <div class="container-fluid">
-            <div class="row bg-primary rounded">
+            <div class="nav row bg-primary rounded">
                 <div class="col-xl-4 mt-2 logga">
-                    <h4 class="text-dark">TODO</h4>
-                </div>
+                    <h4 class="text-left"><a class="text-dark" href="./index.html">ToDO</a></h4>                </div>
                 <div class="col-xl-4"></div>
                 <div class="col-xl-4">
                         <div class="input-group mt-2">
                             <input type="text" class="form-control xl-w-40 rounded userName" placeholder="Användarnamn">
                             <input type="password" class="form-control xl-w-40 rounded password" placeholder="Lösenord">
                             <div class="input-group-append">
-                                <button type="submit" class="btn btn-success xl-w-20 logIn">Logga in</button>
+                                <button type="submit" class="btn btn-success xl-w-20 logIn" onclick="validate()">Logga in</button>
                             </div>
                         </div>
                 </div>
