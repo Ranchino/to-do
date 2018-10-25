@@ -1,4 +1,4 @@
-.row{
+.nav{
     height: 3.2em;
 }
 
@@ -12,3 +12,13 @@
     text-align: right;
     display: inline;
 }
+
+/*@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}*/
