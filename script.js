@@ -1,23 +1,23 @@
 
 
-var attempt = 3; // Variable to count number of attempts.
-// Below function Executes on click of login button.
+var attempt = 3; 
+
 function validate(){
-    var userName = document.getElementsByClassName("userName").value;
-    var password = document.getElementsByClassName("password").value;
+    var userName = document.getElementsByClassName("userName")[0].value;
+    var password = document.getElementsByClassName("password")[0].value;
     if ( userName == "admin" && password == "admin" ){
         alert ("Du har loggat in!");
-        window.location = "index.html"; // Redirecting to other page.
+        window.location = "index.html";
         return true;
     }
     else{
-    attempt --;// Decrementing by one.
+    attempt --;
     alert("Du har "+attempt+" försök kvar;");
-    } if( attempt == 0){ // Disabling fields after 3 attempts.
+    } if( attempt == 0){ 
 
     alert = false, 
-    document.getElementsByClassName("userName").value = "";
-    document.getElementsByClassName("password").value= "";    
+    document.getElementsByClassName("userName")[0].value = "";
+    document.getElementsByClassName("password")[0].value= "";    
     return;
     }
 }
