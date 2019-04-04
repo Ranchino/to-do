@@ -1,6 +1,41 @@
+$(document).ready(function() {
+    //$('#username').focus();
+    $("#welcomeText").css('visibility' , 'hidden');
+
+    $('#submit').click(function() {
+
+        event.preventDefault(); 
+
+        var ValidUsername = $('#username').val() === 'Admin'; 
+        var ValidPassword = $('#password').val() === 'Admin'; 
+
+        if (ValidUsername === true && ValidPassword === true) {
+            $('.LoggedIn').css('display', 'block');
+            $('.NotLoggedIn').hide();
+            $('#welcomeText').css('visibility', 'visible');
+            $("#logout").css('visibility', 'visible');
+            $("#submit").css('visibility', 'hidden');
+            
+        }
+        else {
+            $('.NotLoggedIn').css('display', 'block'); 
+            $('.LoggedIn').hide();
+            $('#welcomeText').hide();
+            $("#logout").css('visibility' , 'hidden');
+            $("#submit").css('visibility' , 'visible');
+            
+        }
+    });
 
 
-var attempt = 3; 
+    $('#logout').click(function() {
+        window.location.href ="index.html";
+    });
+
+
+});
+
+/* var attempt = 3; 
 
 function validate(){
     var userName = document.getElementsByClassName("userName")[0].value;
@@ -20,5 +55,5 @@ function validate(){
     document.getElementsByClassName("password")[0].value= "";    
     return;
     }
-}
+} */
 

@@ -16,29 +16,81 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="nav row bg-primary rounded">
-                <div class="col-xl-4 mt-2 logga">
-                    <h4 class="text-left"><a class="text-dark" href="./index.html">ToDO</a></h4>                </div>
-                <div class="col-xl-4"></div>
-                <div class="col-xl-4">
-                        <div class="input-group mt-2">
-                            <input type="text" class="form-control xl-w-40 rounded userName" placeholder="Användarnamn">
-                            <input type="password" class="form-control xl-w-40 rounded password" placeholder="Lösenord">
-                            <div class="input-group-append">
-                                <button type="submit" class="btn btn-success xl-w-20 logIn" onclick="validate()">Logga in</button>
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">ToDo-List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                            <input type="text" class="form-control" id="username" placeholder="Username">
+                            </div>
+                            <div class="col">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                            <div>
+                            <input class="btn btn-success MyLoginButton" type="button" id="submit" value="Logga in">
+                            <input class="btn btn-success MyLoginButton" type="button" id="logout" value="Logga Ut">
+                    
                             </div>
                         </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        
+    <div class="container-fluid"> 
+        
+        <h1 id="welcomeText"> Välkommen! </h1>
+        <div id="main">
+            <p class="NotLoggedIn">Du är ej in loggad! <br> Har du glömt ditt lösenord ? <br> <a  href="#">Glömt Ditt Lösenord</a> </p>
+            <div></div>    
+            <div class="jumbotron jumbotron-fluid LoggedIn">
+                <div class="container">
+                    <h1 class="display-4">Ranchino</h1>
+                    <p class="lead"> <h2> Saker att göra: </h2></p>
+                    <p class="lead"> Boka biljetter till bion </p>
+                    <p class="lead"> Tvätta bilen </p>
+                    <p class="lead"> Handla mat </p>
                 </div>
             </div>
+
         </div>
 
-    </header>
-    
+            
+    </div>
 
-    <footer>
-
+    <footer class="fixed-bottom bg-dark MyFooter text-info"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                <!--Text here-->
+                </div>
+                <div class="col-sm">
+                    <a  href="#">Ranchino Bahadin</a>
+                </div>
+                <div class="col-sm">
+                <!--Text here-->
+                </div>
+            </div>
+            </div>
     </footer>
 </body>
 </html>
